@@ -1,3 +1,7 @@
+/* ============================= */
+/* GLOBAL STYLES */
+/* ============================= */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,11 +16,18 @@ html {
 }
 
 body {
-    background-color: #f7f7f2;
-    color: #1e1e24;
+    background-color: #f5dae2;
+    color: #493048;
 }
 
+p {
+    font-size: 1.5rem;  
+}
+
+/* ============================= */
 /* HEADER */
+/* ============================= */
+
 header {
     position: fixed;
     width: 100%;
@@ -27,17 +38,20 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 8rem;
-    background-color: #f7f7f2;
+    background-color: #f5dae2;
 }
 
 .logo {
-    color: #1e1e24;
+    color: #493048;
     font-family: 'Pacifico', cursive;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
+/* ============================= */
 /* NAV */
+/* ============================= */
+
 .navmenu {
     display: flex;
 }
@@ -45,7 +59,7 @@ header {
 .navmenu a {
     display: inline-block;
     margin: 0 1.5rem;
-    color: #1e1e24;
+    color: #493048;
     font-weight: 500;
     transition: all 0.4s ease;
 }
@@ -54,20 +68,45 @@ header {
     transform: translateY(-5px);
 }
 
-/* HOME */
 .home {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
     align-items: center;
-    padding: 8rem 5rem 0 18rem;
-    gap: 1rem;
+    padding: 8rem 5rem 0 5rem; /* reduce huge padding */
+    gap: 2rem;
 }
 
-.home-img img {
+/* Ensure text stays left */
+.home-text {
+    order: 1; /* first column */
+}
+
+/* Image on the right */
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2; /* second column */
+    position: relative;
+}
+
+/* Wrapper controls size + doodle */
+.img-wrapper {
+    position: relative;
+    width: 450px;  
+    height: 450px;
+}
+
+/* Circular image */
+.img-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(240, 112, 112, 0.963);
 }
 
 .home-text h2 {
@@ -97,27 +136,33 @@ header {
     max-width: 400px;
 }
 
+/* ============================= */
 /* BUTTON */
+/* ============================= */
+
 .btn {
     display: inline-block;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
     color: #f7f7f2;
-    border: 1px solid #1e1e24;
+    border: 1px solid #493048;
     font-weight: 500;
-    font-size: 12px;
-    background: #1e1e24;
+    font-size: 15px;
+    background: #493048;
     transition: all 0.4s ease;
 }
 
 .btn:hover {
-    background: #f7f7f2;
+    background: #f5dae2;
     color: #1e1e24;
     transform: translateY(5px);
 }
 
+/* ============================= */
 /* SOCIAL ICONS */
+/* ============================= */
+
 .social-icons {
     position: fixed;
     top: 40%;
@@ -136,7 +181,10 @@ header {
     transform: rotate(90deg);
 }
 
+/* ============================= */
 /* SCROLL BUTTON */
+/* ============================= */
+
 .scroll-btn {
     position: absolute;
     bottom: 7%;
@@ -147,7 +195,10 @@ header {
     align-items: center;
 }
 
+/* ============================= */
 /* SECTIONS */
+/* ============================= */
+
 section {
     padding: 6rem 18rem;
 }
@@ -157,7 +208,10 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-/* SCROLL REVEAL ANIMATION */
+/* ============================= */
+/* SCROLL REVEAL */
+/* ============================= */
+
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -167,4 +221,58 @@ section h2 {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+    text-align: justify;
+    text-justify: inter-word;
 }
+
+/* ============================= */
+/* SKILLS – PROGRESS BARS */
+/* ============================= */
+
+.skills {
+    width: 100%;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    background: #e5e5e5;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 22px;
+    width: 100%;
+}
+
+.progress {
+    height: 100%;
+    width: 50%;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 22px;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: width 2s ease;
+}
+
+/* Colors */
+.progress.html {
+    background: linear-gradient(90deg, #ff8c00, #f16529);
+}
+
+.progress.css {
+    background: linear-gradient(90deg, #00c6ff, #2965f1);
+}
+
+.progress.csharp {
+    background: linear-gradient(90deg, #9b4dff, #68217a);
+}
+

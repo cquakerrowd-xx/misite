@@ -1,6 +1,6 @@
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
+    anchor.addEventListener("click", function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute("href"))
             .scrollIntoView({ behavior: "smooth" });
@@ -18,7 +18,6 @@ function typingEffect() {
         setTimeout(typingEffect, 100);
     }
 }
-
 typingEffect();
 
 // Scroll Reveal
@@ -37,3 +36,41 @@ function revealOnScroll() {
 }
 
 window.addEventListener("scroll", revealOnScroll);
+
+// ===============================
+// SKILLS COUNT-UP (FINAL WORKING)
+// ===============================
+
+let skillsAnimated = false;
+
+function animateSkills() {
+    if (skillsAnimated) return;
+
+    const skillsSection = document.querySelector("#skills");
+    if (!skillsSection) return;
+
+    const sectionTop = skillsSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (sectionTop < windowHeight - 150) {
+        skillsAnimated = true;
+
+        document.querySelectorAll(".progress").forEach(bar => {
+            const target = Number(bar.dataset.percent);
+            let count = 0;
+
+            bar.style.width = target + "%";
+
+            const interval = setInterval(() => {
+                count++;
+                bar.textContent = count + "%";
+
+                if (count >= target) {
+                    clearInterval(interval);
+                }
+            }, 20);
+        });
+    }
+}
+
+window.addEventListener("scroll", animateSkills);

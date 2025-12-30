@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="custom-cursor"></div>
+    <div class="stars">
+      <img src="assets/star1.png">
+      <img src="assets/star3.png">
+      <img src="assets/star2.png">
+      <img src="assets/star1.png">
+      <img src="assets/star3.png">
+      <img src="assets/star2.png">
+    </div>
+
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="extra-nav">
+        <button>Get In Touch</button>
+      </div>
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+
+            <title />
+
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">skills</a></li>
+          <li><a class="nav-link" href="#project">Project</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <svg viewBox="0 0 1500 500" data-aos="fade-down">
+            <text x="50%" y="50%" text-anchor="middle">A N J I</text>
+          </svg>
+          <h1 data-aos="zoom-in-up">
+           Building the web, one project at a time<span> : Creating..</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            About Me
+          </h1>
+          <div class="about-me">
+            <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+              <div class="image-box">
+                <img src="assets/profile.png" alt="profile" />
+              </div>
+            </div>
+
+            <div
+              data-aos="zoom-in-left"
+              data-aos-delay="300"
+              class="description"
+            >
+              <div class="name-role">
+                <h1>Anjilyn A. Ferrer </h1>
+                <div class="role">
+                  <h2>Computer Science Student</h2>
+                </div>
+              </div>
+              <p>
+I am a first-year Computer Science student who is new to the field but highly motivated and eager to learn. Although I am still at the beginning of my journey, I am developing a strong foundation in programming, problem-solving, and understanding how computers and software work. I approach every lesson with curiosity and an open mind, knowing that growth comes from consistent effort and practice. <br />
+                <br />
+As a beginner, I am actively exploring different areas of computer science such as basic programming, web development, and computational thinking. I enjoy learning how code turns ideas into functional systems and how technology can be used to solve real-world problems. Challenges motivate me to improve, and I see mistakes as opportunities to learn and strengthen my skills.<br />
+                <br />
+I am willing to invest time and effort to continuously improve and expand my knowledge. I value collaboration, feedback, and hands-on experience, and I am excited to grow both academically and personally throughout my studies. With dedication and a strong willingness to learn, I aim to build a solid foundation that will prepare me for more advanced topics and future opportunities in the field of computer science.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="skill">
+      <div class="container">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Skills
+          </h1>
+        <div class="content">
+          <div class="skills" data-aos-delay="500">
+            <div data-aos="zoom-in-down" class="skill-box html" data-percentage="50">
+              <img src="assets/html.png" alt="html" />
+                <div class="progress">
+                  <span>0%</span>
+                </div>
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box css" data-percentage="50">
+              <img src="assets/css.png" alt="css" />
+                <div class="progress">
+                  <span>0%</span>
+                </div>
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box js" data-percentage="40">
+              <img src="assets/javascript.png" alt="javascript" />
+                <div class="progress">
+                  <span>0%</span>
+                </div>
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box csharp" data-percentage="70">
+              <img src="assets/csharp.png" alt="c#" />
+                <div class="progress">
+                  <span>0%</span>
+                </div>
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box github" data-percentage="50">
+              <img src="assets/github.png" alt="github" />
+                <div class="progress">
+                    <span>0%</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="project">
+      <div class="container">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Projects
+          </h1>
+        <div class="content">
+          <div class="projects">
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+              <img src="assets/project.png" alt="project" />
+
+              <div class="description">
+                <h1>Personal Website Portfolio</h1>
+                <p>
+                  This personal website portfolio, developed for the Introduction to Computing course, demonstrates Ferrer’s application of fundamental computing concepts. 
+                  Using HTML, CSS, and JavaScript, the site features a clear structure, intuitive navigation, and organized content. 
+                  The project highlights clean, readable code and practical web development skills, showcasing Ferrer’s ability to create interactive digital projects.
+                <div class="action">
+                  <button onclick="window.open('https://github.com/cquakerrowd-xx/misite', '_button')">Github</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="assets/bloomify.jpg" alt="project" />
+
+              <div class="description">
+                <h1>Console App : Bloomify (C#)</h1>
+                <p>
+                  Bloomify Console App is a console-based productivity tool that helps users improve focus and develop healthy work habits. 
+                  It combines the Pomodoro Technique with interactive blooming flower animations to make time management engaging and motivating. 
+                  Users can set custom focus and break timers, track sessions in a history log, and visualize progress through blooming flowers. 
+                  Built using structured programming principles, the app demonstrates practical application of variables, loops, control structures, arrays, and custom methods in a console environment.
+                </p>
+                <div class="action">
+                  <button onclick="window.open('https://github.com/cquakerrowd-xx/bloomy', '_button')">Github</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Contact
+          </h1>
+        <div class="content">
+          <form
+            data-aos="zoom-in-down"
+            data-aos-delay="300"
+            class="contact-form"
+          >
+            <div class="input">
+              <input type="text" placeholder="Name..." />
+              <input type="email" placeholder="Email..." />
+              <input type="number" placeholder="Phone..." />
+              <input type="text" placeholder="Subject..." />
+            </div>
+            <textarea name="message" placeholder="Message..."></textarea>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="profile">
+          <div class="logo">
+            <img src="assets/logo.png" alt="logo" />
+            <a href="">Anji</a>
+          </div>
+
+          <!-- Short About -->
+          <p>
+                I am a First Year Student from Laguna State Polytechnic University, San Pablo Campus. 
+                I am passionate and dedicated in learning Computer Science.
+          </p>
+
+          <!-- Social Media -->
+          <div class="social-media-container">
+            <div class="social-media">
+              <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+            </div>
+            <div class="social-media">
+              <box-icon
+                color="#fff"
+                name="facebook-circle"
+                type="logo"
+              ></box-icon>
+            </div>
+            <div class="social-media">
+              <box-icon color="#fff" type="logo" name="tiktok"></box-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-container">
+          <div class="information">
+            <h1>Skill</h1>
+            <ul>
+              <li>
+                <a href="#">React.js</a>
+              </li>
+              <li>
+                <a href="#">Next.js</a>
+              </li>
+              <li>
+                <a href="#">Alpine.js</a>
+              </li>
+              <li>
+                <a href="#">Tailwind CSS</a>
+              </li>
+              <li>
+                <a href="#">Typescript</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource">
+            <h1>Technology</h1>
+            <ul>
+              <li>
+                <a href="#">Clerk Auth</a>
+              </li>
+              <li>
+                <a href="#">Prisma ORM</a>
+              </li>
+              <li>
+                <a href="#">Figma</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+              <li>
+                <a href="#">Shadcn UI</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navigation">
+            <h1>Navigation</h1>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Skill</a>
+              </li>
+              <li>
+                <a href="#">Project</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

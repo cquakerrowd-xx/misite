@@ -21,21 +21,11 @@ html {
 }
 
 body {
-  cursor: none;
+  /* REMOVED custom cursor here */
   background-color: #FFF8F0; /* Floral White */
   color: #4A403A; /* Deep Taupe */
   position: relative;
   overflow-x: hidden;
-}
-
-.custom-cursor {
-  position: fixed;
-  width: 29px;
-  height: 29px;
-  background: url('assets/cursor-norm.png') no-repeat top left;
-  background-size: contain;
-  pointer-events: none; /* don’t block clicks */
-  z-index: 9999;
 }
 
 .container {
@@ -58,7 +48,7 @@ header {
   width: 100%;
   height: 10vh;
   z-index: 10;
-  background-color: rgba(255, 248, 240, 0.9); /* Added slight background so nav is readable */
+  background-color: rgba(255, 248, 240, 0.9);
 }
 
 header .logo {
@@ -77,7 +67,7 @@ header .logo a {
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
 }
 
 header nav {
@@ -92,7 +82,7 @@ header nav a {
   font-weight: 500;
   font-size: 18px;
   transition: 0.3s linear;
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
 }
 
 header nav a::after {
@@ -119,7 +109,7 @@ header .extra-nav {
 }
 
 header .extra-nav button {
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
   background: transparent;
   border: 2px solid #4A403A; /* Deep Taupe */
   border-radius: 8px;
@@ -137,7 +127,7 @@ header .extra-nav button:hover {
 }
 
 header .hamburger-menu {
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
   display: none;
   color: #4A403A;
 }
@@ -147,17 +137,17 @@ header .mobile-nav {
 }
 
 .stars {
-  position: fixed; /* Changed from absolute to fixed so it follows your screen */
+  position: fixed;
   bottom: -70px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end; /* Starts items at the bottom of the screen */
+  align-items: flex-end;
   justify-content: space-around;
-  z-index: 0; /* Puts stars BEHIND the text/buttons */
-  pointer-events: none; /* Allows you to click buttons through the stars */
+  z-index: 0;
+  pointer-events: none;
   overflow: hidden;
 }
 
@@ -181,7 +171,7 @@ header .mobile-nav {
     opacity: 1;
   }
   100% {
-    transform: translateY(-80vh); /* Slight drift to left */
+    transform: translateY(-80vh);
     opacity: 0;
   }
 }
@@ -195,7 +185,7 @@ header .mobile-nav {
   width: 30px;
   height: auto;
   animation-delay: 2s;
-  animation-duration: 10s; /* Slower */
+  animation-duration: 10s;
 }
 
 .stars img:nth-child(3) {
@@ -206,7 +196,7 @@ header .mobile-nav {
 
 .stars img:nth-child(4) {
   height: auto;
-  width: 55px; /* Added 'px' - this was missing */
+  width: 55px;
   animation-delay: 1s;
 }
 
@@ -268,7 +258,7 @@ header .mobile-nav {
 
 .hero .container .content button {
   font-family: 'Rubik bubbles', cursive;
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
   padding: 0.1em 0.25em;
   width: 13em;
   height: 4.2em;
@@ -505,7 +495,6 @@ header .mobile-nav {
 }
 
 .project .container .content .projects .card {
-  padding: px;
   border: 2px solid #E6B8A2; /* Dusty Rose */
   border-radius: 12px;
   height: 450px;
@@ -531,7 +520,6 @@ header .mobile-nav {
 
 .project .container .content .projects .card .description p {
   font-size: 20px;
-  font-weight: 400;
   text-align: justify;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -547,7 +535,7 @@ header .mobile-nav {
 }
 
 .project .container .content .projects .card .description .action button {
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,7 +668,7 @@ footer .container .profile .social-media-container {
 }
 
 footer .container .profile .social-media-container .social-media {
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
   width: 35px;
   height: 35px;
   padding: 6px;
@@ -715,7 +703,7 @@ footer .container .link-container .navigation ul {
 footer .container .link-container .information ul li,
 footer .container .link-container .resource ul li,
 footer .container .link-container .navigation ul li {
-  cursor: none;
+  cursor: pointer; /* Changed to standard pointer */
 }
 
 footer .container .link-container .information ul li::after,
@@ -818,7 +806,7 @@ footer .container .link-container .navigation ul li a {
   }
 
   header .mobile-nav .close svg {
-    cursor: none;
+    cursor: pointer; /* Changed to standard pointer */
     width: 35px;
     height: 35px;
     stroke: #4A403A;
@@ -835,7 +823,7 @@ footer .container .link-container .navigation ul li a {
   }
 
   header .mobile-nav ul li {
-    cursor: none;
+    cursor: pointer; /* Changed to standard pointer */
     position: relative;
     list-style: none;
     width: 25%;

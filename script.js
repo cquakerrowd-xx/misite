@@ -17,37 +17,6 @@ navLink.forEach((link) => {
   });
 });
 
-const cursor = document.querySelector('.custom-cursor');
-
-// Adjust these so the tip of your cursor image aligns with pointer
-const offsetX = 0;
-const offsetY = 0;
-
-// Move cursor
-document.addEventListener('mousemove', e => {
-  cursor.style.left = (e.clientX - offsetX) + 'px';
-  cursor.style.top = (e.clientY - offsetY) + 'px';
-});
-
-// Click effect
-document.addEventListener('mousedown', () => {
-  cursor.style.background = "url('cursor.png') no-repeat top left";
-});
-document.addEventListener('mouseup', () => {
-  cursor.style.background = "url('cursor_norm.png') no-repeat top left";
-});
-
-// Optional: hover effect for links/buttons
-document.querySelectorAll('a, button').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.background = "url('cursor_norm.png') no-repeat top left"; // or a special hover image
-  });
-  el.addEventListener('mouseleave', () => {
-    cursor.style.background = "url('cursor_norm.png') no-repeat top left";
-  });
-});
-
-
 const skillBoxes = document.querySelectorAll('.skill-box');
 
 skillBoxes.forEach(box => {

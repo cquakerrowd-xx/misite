@@ -808,6 +808,11 @@ footer .container .link-container .resource ul li a
     display: none;
   }
 
+  header .logo img {
+    width: 100px; 
+  }
+}
+
   header .hamburger-menu {
     display: block;
   }

@@ -40,3 +40,25 @@ skillBoxes.forEach(box => {
     progress.textContent = '0%';
   });
 });
+
+const contactForm = document.getElementById('contactForm');
+    const successMsg = document.getElementById('success-msg');
+
+if (contactForm && successMsg) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Hide form, show message
+            contactForm.style.display = 'none';
+            successMsg.style.display = 'flex';
+            
+            // RESET THE FORM (Optional)
+            contactForm.reset();
+
+            // --- ADD THIS LINE ---
+            // It forces the animation library to recognize the new page height
+            setTimeout(() => {
+                AOS.refresh(); 
+            }, 100); 
+        });
+    }

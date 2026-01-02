@@ -210,7 +210,7 @@ I am willing to invest time and effort to continuously improve and expand my kno
         <div class="content">
           <div class="projects">
             <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
-              <img src="assets/project.png" alt="project" />
+              <img src="assets/web portfolio.png" alt="project" />
 
               <div class="description">
                 <h1>Personal Website Portfolio</h1>
@@ -250,20 +250,23 @@ I am willing to invest time and effort to continuously improve and expand my kno
           <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
             Contact
           </h1>
-        <div class="content">
-          <form
-            data-aos="zoom-in-down"
-            data-aos-delay="300"
-            class="contact-form"
-          >
-            <div class="input">
-              <input type="text" placeholder="Name..." />
-              <input type="email" placeholder="Email..." />
-              <input type="number" placeholder="Phone..." />
-              <input type="text" placeholder="Subject..." />
+           <div class="content">
+            <form id="contactForm" data-aos="zoom-in-down" data-aos-delay="300" class="contact-form">
+              <div class="input">
+                <input type="text" placeholder="Name..." required />
+                <input type="email" placeholder="Email..." required />
+                <input type="number" placeholder="Phone..." />
+                <input type="text" placeholder="Subject..." required />
+              </div>
+              <textarea name="message" placeholder="Message..." required></textarea>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          
+            <div id="success-msg" style="display: none;">
+              <h1>Message Sent!</h1>
             </div>
-            <textarea name="message" placeholder="Message..."></textarea>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -285,84 +288,37 @@ I am willing to invest time and effort to continuously improve and expand my kno
           <!-- Social Media -->
           <div class="social-media-container">
             <div class="social-media">
+              <a href="https://www.instagram.com/cwackarowd.xx/" target="_blank"></a>
               <box-icon color="#fff" type="logo" name="instagram"></box-icon>
             </div>
             <div class="social-media">
-              <box-icon
-                color="#fff"
-                name="facebook-circle"
-                type="logo"
-              ></box-icon>
+              <a href="https://www.facebook.com/anjiiiehusjshjsksj" target="_blank"></a>
+              <box-icon color="#fff" type="logo" name="facebook-circle"></box-icon>
             </div>
             <div class="social-media">
-              <box-icon color="#fff" type="logo" name="tiktok"></box-icon>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=0325-1139@lspu.edu.ph" target="_blank"></a>
+              <box-icon color="#fff" type="logo" name="gmail"></box-icon>
             </div>
           </div>
         </div>
 
         <div class="link-container">
-          <div class="information">
-            <h1>Skill</h1>
-            <ul>
-              <li>
-                <a href="#">React.js</a>
-              </li>
-              <li>
-                <a href="#">Next.js</a>
-              </li>
-              <li>
-                <a href="#">Alpine.js</a>
-              </li>
-              <li>
-                <a href="#">Tailwind CSS</a>
-              </li>
-              <li>
-                <a href="#">Typescript</a>
-              </li>
-            </ul>
-          </div>
-
           <div class="resource">
-            <h1>Technology</h1>
+            <h1>Resources</h1>
             <ul>
               <li>
-                <a href="#">Clerk Auth</a>
+                <a href="https://github.com/ThisIsAngelo/TikTok/tree/main/Portfolio">ThisIsAngelo</a>
               </li>
               <li>
-                <a href="#">Prisma ORM</a>
+                <a href="https://youtu.be/CZTCciHE72I?si=RekX9eeL1FeUhB-T">Background Animation</a>
               </li>
               <li>
-                <a href="#">Figma</a>
+                <a href="https://youtu.be/vY2xUc4TVmY?si=ikcU1XJCQMzriF03">HTML</a>
               </li>
               <li>
                 <a href="#">Github</a>
               </li>
-              <li>
-                <a href="#">Shadcn UI</a>
-              </li>
             </ul>
-          </div>
-
-          <div class="navigation">
-            <h1>Navigation</h1>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Skill</a>
-              </li>
-              <li>
-                <a href="#">Project</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </footer>

@@ -62,3 +62,38 @@ if (contactForm && successMsg) {
             }, 100); 
         });
     }
+
+/* =========================================
+       4. COPY EMAIL TO CLIPBOARD
+    ========================================= */
+    const emailBtn = document.getElementById('email-btn');
+    const myEmail = "0325-1139@lspu.edu.ph"; // <--- PUT YOUR REAL EMAIL HERE
+
+    if (emailBtn) {
+        emailBtn.addEventListener('click', () => {
+            // 1. Copy the text
+            navigator.clipboard.writeText(myEmail).then(() => {
+                
+                // 2. Visual Feedback (Let the user know it worked)
+                // If it's a text button:
+                const originalText = emailBtn.innerText;
+                if (originalText) { 
+                    emailBtn.innerText = "Email Copied!";
+                    setTimeout(() => {
+                        emailBtn.innerText = originalText;
+                    }, 2000); // Revert back after 2 seconds
+                }
+
+                // If it's an icon (in footer):
+                // We can change the background color temporarily
+                const originalColor = emailBtn.style.backgroundColor;
+                emailBtn.style.backgroundColor = "#4A403A"; // Darker color
+                setTimeout(() => {
+                    emailBtn.style.backgroundColor = originalColor; // Revert color
+                }, 200);
+                
+                // Optional: Alert for mobile users just in case
+                // alert("Email copied: " + myEmail); 
+            });
+        });
+    }

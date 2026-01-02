@@ -937,3 +937,138 @@ footer .container .link-container .resource ul li a
     width: 50%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  
+  /* 1. FIX THE GLOBAL SPACING */
+  .container {
+    padding: 1rem 1.5rem; /* Reduced from 9rem to 1.5rem so content fits */
+  }
+
+  .title {
+    font-size: 2.5rem; /* Smaller title font */
+  }
+
+  /* 2. HERO SECTION */
+  .hero .container .content svg {
+    margin-bottom: -2rem; /* Adjust spacing */
+  }
+  
+  .hero .container .content h1 {
+    width: 100%; /* Allow text to use full width */
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  /* 3. ABOUT SECTION - STACK IMAGE AND TEXT */
+  .about .container .content .about-me {
+    flex-direction: column; /* Stack them vertically */
+    gap: 30px;
+  }
+
+  .about .container .content .about-me .profile,
+  .about .container .content .about-me .description {
+    width: 100%; /* Full width */
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    height: auto; /* Let height adjust to image */
+    max-height: 400px;
+  }
+
+  /* 4. SKILLS SECTION - 1 COLUMN */
+  .skill .container .content .skills {
+    grid-template-columns: 1fr; /* 1 column instead of 3 */
+    gap: 30px;
+  }
+
+  /* 5. PROJECTS SECTION - CRITICAL FIX */
+  .project .container .content .projects {
+    grid-template-columns: 1fr; /* 1 column instead of 2 */
+    width: 100%;
+  }
+
+  .project .container .content .projects .card {
+    /* REMOVE FIXED DIMENSIONS */
+    width: 100%;  /* Was 550px - caused scrolling */
+    height: auto; /* Was 750px - caused gaps */
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .project .container .content .projects .card img {
+    height: 250px; /* Smaller image height for mobile */
+    object-fit: cover;
+  }
+
+  .project .container .content .projects .card .description {
+    height: auto; /* Let text expand naturally */
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .project .container .content .projects .card .description h1 {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .project .container .content .projects .card .description p {
+    font-size: 16px; /* Readability */
+    margin: 10px 0;
+  }
+
+  .project .container .content .projects .card .description .action button {
+    width: 50%; /* Bigger button for touching */
+    margin-left: 0;
+  }
+
+  /* 6. CONTACT SECTION */
+  .contact .container .content .contact-form {
+    width: 100%; /* Was 50% - too small for mobile */
+    border-width: 2px;
+  }
+  
+  .contact .container .content .contact-form .input {
+    flex-direction: column; /* Stack inputs */
+  }
+  
+  .contact .container .content .contact-form .input input {
+    width: 100%; /* Full width inputs */
+  }
+
+  #success-msg {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  /* 7. FOOTER */
+  footer .container {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  footer .container .profile,
+  footer .container .link-container {
+    width: 100%;
+    text-align: center; /* Center align for mobile */
+  }
+  
+  footer .container .profile .logo, 
+  footer .container .profile .social-media-container {
+    justify-content: center;
+  }
+
+  footer .container .link-container .resource {
+    width: 100%;
+    align-items: center;
+  }
+  
+  footer .container .link-container .resource h1 {
+    justify-content: center;
+  }
+  
+  footer .container .link-container .resource ul {
+    align-items: center;
+  }
+}
